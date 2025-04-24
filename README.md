@@ -47,6 +47,21 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 
 ---
 
+## 📝 Catatan
+
+   Ini adalah proyek belajar, jadi jangan berharap fitur canggih ya! 😅
+   Semua saran dan kontribusi sangat dihargai! 🙏
+
+   Website ini sudah tidak di lanjutkan lagi, karena owner nya ada tugas yang jauh lebih penting,
+   jadi mohon maaf kalo website ini hanya berisi halaman halaman web yang membosankan. 
+
+   Website ini di buat oleh 1 orang, jadi jangan berharap ada fitur canggih lainnya, atau sebagainya.
+   Aku akan mengupdate website ini jika tidak ada kesibukkan lain.
+
+   Semoga kalian mengahargai karya simple ku ini.
+
+   See you next time!
+
 ## 😵 Penutup
 
 Makasih udah mampir ke project yang gak jelas ini.  
