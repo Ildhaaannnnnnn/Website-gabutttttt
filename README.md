@@ -43,7 +43,7 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 ## 📺 Live Demo
 
 > Nanti bisa taruh link GitHub Pages kamu di sini:  
-> [https://kamu.github.io/website-gabut](https://kamu.github.io/website-gabut)
+> https://ildhaaannnnnnn.github.io/Website-gabutttttt/
 
 ---
 
