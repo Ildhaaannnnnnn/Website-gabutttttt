@@ -4,5 +4,16 @@ body {
     box-shadow: none;
     color: solid black;
     font: 100% poppins;
-
+    height: 100vh;
 }
+
+.text-h1 {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aquamarine;
+    padding: 2px;
+    margin: auto;
+}
+
+
