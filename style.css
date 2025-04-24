@@ -16,4 +16,56 @@ body {
     margin: auto;
 }
 
+.home {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: green;
+    padding: 2px;
+    margin: auto;
+}
 
+.articles {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lightblue;
+    padding: 2px;
+    margin: auto;
+}
+
+.articles-lama {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lightgreen ;
+    padding: 2px;
+    margin: auto;
+}
+
+.hal-gabut {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: limegreen;
+    padding: 2px;
+    margin: auto;
+}
+
+.about {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lime;
+    padding: 2px;
+    margin: auto;
+}
+
+.contact {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lightslategray;
+    padding: 2px;
+    margin: auto;
+}
