@@ -42,7 +42,7 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 
 ## 📺 Live Demo
 
-> Nanti bisa taruh link GitHub Pages kamu di sini:  
+> github pages:  
 > https://ildhaaannnnnnn.github.io/Website-gabutttttt/
 
 ---
