@@ -23,7 +23,7 @@ Cuma buat ngisi waktu luang, latihan, dan nyobain hal-hal random.
 
 - HTML
 - CSS
-- JavaScript (sedikit doang kok...)
+- Tanpa JavaScript 
 
 ---
 
