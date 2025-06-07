@@ -1,198 +1,39 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website gabut</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanz's Fun Corner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hanz's Fun Corner 🧠💡</h1>
+    <p>Tempat kamu cari hiburan, ide random, dan fakta unik!</p>
+  </header>
+  <main>
+    <div class="card">
+      <h2>Ide Random Saat Bosan 🎲</h2>
+      <p id="random-idea">Klik tombol di bawah untuk dapat ide random!</p>
+      <button onclick="generateIdea()">🎯 Generate Idea</button>
+    </div>
 
-  <body>
-    <header>
-      <h1 class="text-h1">Website Gabut</h1>
-      <p>Selamat datang di website gabut saya.</p>
-      <p>Website ini adalah tempat saya berbagi hal-hal yang tidak penting, tapi mungkin bisa menghibur kamu.</p>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#articles">Articles</a></li>
-          <li><a href="#Articles-lama">Articles lama</a></li>
-          <li><a href="#hal-gabut">Hal gabut</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-     </header>
-    <main>
-      <section id="home">
-        <h2 class="home">Home</h2>
-        <p>Selamat datang di Website Gabut, tempat kamu bisa menemukan hiburan ringan dan konten 
-          menarik tanpa tujuan khusus. Di halaman ini, kamu akan menemukan berbagai macam artikel, gambar, 
-          dan video yang dibuat untuk menghilangkan kebosanan. Kalau kamu butuh pelarian atau sekadar ingin browsing tanpa beban,
-           kamu berada di tempat yang tepat!
+    <div class="card">
+      <h2>Fun Fact Unik 📚</h2>
+      <p id="fun-fact">Klik tombol buat tahu fakta menarik!</p>
+      <button onclick="generateFact()">🔍 Generate Fun Fact</button>
+    </div>
 
-        </p>
-        <p>Website Gabut adalah tempat yang tepat untuk kamu yang ingin bersantai dan menikmati waktu luang. 
-          Kami menyediakan berbagai konten menarik yang bisa kamu nikmati kapan saja dan di mana saja. 
-          Apakah kamu sedang mencari artikel lucu, gambar unik, atau video menghibur? Kami punya semuanya!</p>
-        <p>Jadi, jangan ragu untuk menjelajahi website kami dan temukan konten yang sesuai dengan selera kamu.
-          Kami berkomitmen untuk memberikan pengalaman browsing yang menyenangkan dan tanpa tekanan. 
-          Selamat berselancar di Website Gabut!</p>
-          <img src="data:image/png;base64,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" alt="gabut" width="300" height="200">
-        <p>Gambar di atas adalah contoh gambar yang bisa kamu temukan di website gabut ini. Gambar ini diambil dari internet dan tidak ada hubungannya dengan website ini.</p>
-        
-      </section>
-      <br>
-      <br>
-      
-      <br>
-      <br>
-      <hr style="border: 2px solid black;">
-      <section id="articles">
-        <h2 class="articles">Articles</h2>
-        
-        <p>
-          <strong>5 Hal Random yang Bisa Kamu Lakuin Pas Lagi Gabut</strong> <br>
-          <br>
-          <strong>Kadang kita lagi duduk bengong, ngelamun, scroll HP, </strong> tiba-tiba mikir: “Aku ngapain sih?” Nah, kalau kamu lagi ngalamin momen-momen gabut kayak gitu, ini 5 hal random tapi seru yang bisa kamu coba:
-        </p>
-        <p>
-          <strong>1. Coba Ngegambar Tapi Pakai Tangan Non-Dominan</strong> <br> <br>
-          Kalau kamu biasanya gambar pakai tangan kanan, sekarang coba pakai tangan kiri. <br>Hasilnya bakal absurd banget, tapi justru itu yang bikin lucu. <br>Bonus: bisa jadi konten Instagram Story.
+    <div class="card">
+      <h2>Forum Mini 🗨️</h2>
+      <p>Coming soon: Forum anonim tempat curhat, diskusi, dan sharing tanpa identitas.</p>
+    </div>
+  </main>
 
-        </p>
-        <p>
-          <strong>2. Buat Playlist dengan Tema Aneh</strong> <br> <br>
-          Misalnya: “Lagu yang bakal kudengerin kalau aku alien yang baru nyampe Bumi” atau “Soundtrack hidupku kalau aku karakter anime.” Bener-bener bebas, makin ngaco makin asik.
+  <footer>
+    <p>Made with ❤️ by Hanz • 2025</p>
+  </footer>
 
-        </p>
-        
-        <p>
-          <strong>3. Googling Hal-Hal Aneh</strong> <br> <br>
-          Coba ketik: “kenapa burung bisa tidur di kabel listrik” atau “asal-usul kata ‘gabut’” <br>
-          – siapa tahu kamu jadi tahu fakta-fakta aneh tapi keren.
-        </p>
-        <p>
-          <strong>4. Ngobrol Sama AI (Kayak Sekarang 😎)</strong> <br> <br>
-          Serius, ngobrol sama AI itu bisa jadi hiburan. <br>Bisa nanya hal random, curhat, minta jokes, atau bahkan bikin cerita bareng.
-        </p>
-        <p>
-          <strong>5. Nulis Diary Digital</strong> <br> <br>
-          Buka Notes atau apa aja, terus tulis: “Hari ini aku gabut dan nulis ini.” Lalu biarin tulisanmu ngalir sendiri. <br>Kadang dari gabut bisa jadi inspirasi.
-        </p>
-        <br>
- 
-        <br>
-         <hr style="border: 2px solid black;">
-        <section id="Articles-lama">
-            <h2 class="articles-lama">Articles lama</h2>
-            <p><strong>Mengenal Keajaiban Dunia yang Terlupakan: <br>Menyusuri Lorong Sejarah</strong></p>
-            <p>
-              Pernahkah kamu bertanya-tanya tentang masa lalu yang sudah lama terlupakan? Dunia ini penuh dengan keajaiban dan misteri yang bahkan sejarah pun bisa terlewat begitu saja.<br>Ada banyak tempat yang mungkin pernah populer, namun kini hanya tersisa jejak-jejaknya yang tersembunyi di antara waktu. Artikel ini akan mengajakmu untuk menyusuri beberapa lorong sejarah yang, meski sudah terlupakan, tetap menyimpan kisah menarik yang patut untuk diceritakan.
-            </p>
-            <p>
-              <strong>1. Kota Pompeii: Terperangkap dalam Waktu</strong>
-            </p>
-            <p>
-              Salah satu kota yang pernah berkilau di dunia Romawi adalah Pompeii, yang sekarang dikenal dengan kota yang terkubur di bawah abu vulkanik. Pada tahun 79 M, Gunung Vesuvius meletus dan mengubur kota ini dalam sekejap. Pompeii, yang merupakan kota makmur di masa itu, kini menjadi salah satu situs arkeologi terbesar yang memberikan kita gambaran nyata tentang kehidupan di zaman Romawi kuno. Rumah, jalan, dan bahkan makanan yang tertinggal menjadi bukti bagaimana mereka hidup sehari-hari. <br> <br>
-
-Namun, yang paling mencolok adalah sisa-sisa manusia yang terjebak dalam waktu. Melalui cetakan abu yang membeku, kita bisa melihat bagaimana mereka berusaha untuk melarikan diri, menghadapi bencana yang datang begitu cepat.
-            </p>
-            <p><strong>2. Stonehenge: Misteri Batu-Batu Raksasa</strong></p>
-            <p>
-              Di Inggris, ada sebuah situs megah yang masih menjadi perdebatan hingga saat ini, yaitu Stonehenge. Batu-batu besar yang tersusun rapi ini diyakini dibangun lebih dari 4.000 tahun yang lalu. Hingga kini, tujuan sebenarnya dari pembangunan Stonehenge tetap menjadi misteri. Beberapa teori menyatakan bahwa Stonehenge digunakan untuk keperluan agama atau ritual, sementara yang lainnya berpendapat bahwa situs ini memiliki hubungan dengan pengamatan astronomi.<br> <br>
-
-Namun, tidak peduli teori apa yang kamu percayai, yang jelas Stonehenge tetap menjadi simbol dari kebudayaan kuno yang sangat maju, jauh melampaui zaman mereka.
-            </p>
-            <p><strong>3. Machu Picchu: Kota Inca yang Hilang</strong></p>
-            <p>
-              Di pegunungan Andes, terdapat kota kuno yang hampir terlupakan oleh dunia. Machu Picchu, yang terletak di Peru, adalah situs bersejarah yang dibangun oleh kerajaan Inca pada abad ke-15. Meskipun ditemukan kembali pada tahun 1911 oleh Hiram Bingham, Machu Picchu tetap mempertahankan keajaibannya yang misterius. <br> <br>
-
-Dibangun di atas puncak gunung, kota ini terdiri dari tembok batu yang sangat rapi dan sistem irigasi yang luar biasa. Keberadaan Machu Picchu sering dikaitkan dengan legenda dan mitos, tetapi hingga sekarang, arkeolog dan peneliti masih terus berusaha mengungkap tujuan sebenarnya dari kota ini.
-            </p>
-            <p><strong>4. Candi Borobudur: Keindahan yang Terlupakan</strong></p>
-            <p>
-              Indonesia memiliki salah satu keajaiban dunia yang mungkin sering terlewatkan dalam perjalanan sejarah dunia. Candi Borobudur, yang terletak di Jawa Tengah, merupakan candi Buddha terbesar di dunia. Dibangun pada abad ke-9, candi ini merupakan karya seni arsitektur yang luar biasa dengan relief-relief yang menceritakan kisah-kisah kehidupan Buddha. <br> <br>
-
-Namun, setelah berabad-abad dibiarkan terbengkalai, Borobudur sempat terlupakan dan terkubur di bawah lapisan debu dan hutan lebat. Baru pada abad ke-19, candi ini ditemukan kembali dan mulai mendapatkan perhatian internasional. Keindahannya kini menarik wisatawan dari seluruh dunia yang datang untuk menyaksikan secara langsung keajaiban budaya ini.
-            </p>
-            <p><strong>5. Atlantis: Kota Legendaris yang Hilang</strong></p>
-            <p>
-              Salah satu legenda yang paling terkenal adalah kisah tentang Atlantis, kota yang konon hilang di dasar laut. Dikisahkan oleh Plato pada sekitar 360 SM, Atlantis adalah sebuah peradaban yang sangat maju, namun akhirnya tenggelam dalam satu malam yang dramatis. Meskipun tidak ada bukti fisik yang mengonfirmasi keberadaan Atlantis, cerita tentang kota ini terus bertahan dalam berbagai bentuk, baik sebagai mitos maupun spekulasi ilmiah. <br> <br>
-
-Banyak teori yang berusaha menjelaskan tentang lokasi dan nasib Atlantis, mulai dari pendapat bahwa itu ada di Laut Tengah hingga yang menghubungkannya dengan kebangkitan peradaban kuno. Meskipun tidak ada yang tahu pasti, Atlantis tetap menjadi simbol dari kebesaran dan kehancuran sebuah peradaban yang hilang begitu saja.
-            </p>
-            <p><strong>Kesimpulan: Jejak yang Tertinggal</strong></p>
-            <p>
-              Dunia ini penuh dengan keajaiban yang sering terlupakan oleh waktu. Namun, melalui situs-situs sejarah ini, kita bisa belajar bahwa meskipun peradaban besar sekalipun bisa hilang, kisah mereka tetap bertahan dalam bentuk batu, tulisan, dan warisan budaya. Mungkin, suatu hari nanti, kita pun akan menjadi bagian dari sejarah yang suatu saat akan diungkapkan oleh generasi berikutnya. Jadi, apakah kamu siap untuk menyusuri lorong-lorong sejarah yang terlupakan ini dan menggali lebih dalam keajaiban dunia yang masih tersembunyi?
-            </p>
-        </section>
-         <br>
-         <hr style="border: 2px solid black;">
-
-
-        <section id="hal-gabut">
-          <h2 class="hal-gabut">Hal Gabut</h2>
-          <p>Berikut adalah beberapa hal gabut yang bisa kamu lakukan untuk mengisi waktu luangmu:</p>
-          <ul>
-            <li>Membaca buku yang sudah lama ingin kamu baca.</li>
-            <li>Menonton film atau serial yang sudah lama kamu tunggu.</li>
-            <li>Mencoba resep masakan baru di dapur.</li>
-            <li>Berjalan-jalan di sekitar rumah atau taman terdekat.</li>
-            <li>Mendengarkan musik atau podcast yang menarik.</li>
-          </ul>
-          <hr style="border: 2px solid black;">
-
-      <section id="about">
-        <h2 class="about">About</h2>
-        <p><i> Website Gabut hadir untuk memenuhi kebutuhan kamu yang sering merasa bosan atau butuh hiburan sederhana.</i><br>
-           Kami menyediakan konten yang ringan, santai, dan kadang-kadang tanpa tujuan, untuk membuat hari-hari kamu lebih menyenangkan. Kami percaya bahwa kadang-kadang tidak ada tujuan yang lebih penting daripada sekadar menikmati waktu luang. Gabut adalah tempat kamu bisa bersantai, menemukan keseruan, <br>
-          dan mungkin juga mendapatkan sedikit inspirasi di tengah kebosanan.</p>
-        <p><i>Website Gabut adalah proyek pribadi yang dibuat dengan cinta dan dedikasi. Kami ingin menciptakan ruang di mana kamu bisa merasa nyaman dan bebas untuk menjelajahi berbagai konten tanpa tekanan. Kami percaya bahwa setiap orang berhak mendapatkan momen santai dalam hidup mereka, dan kami berharap website ini bisa menjadi tempat yang tepat untuk itu.</i></p>
-        <p>Website Gabut adalah tempat di mana kamu bisa menemukan berbagai konten menarik yang dirancang untuk menghibur dan menghilangkan kebosanan. Kami memiliki berbagai kategori konten, mulai dari artikel lucu, gambar unik, hingga video menghibur. Kami berkomitmen untuk terus</p>
-        <p>menyajikan konten-konten baru dan menarik agar kamu tidak pernah kehabisan hal untuk dilakukan saat gabut.</p>
-      </section>
-       <br>
-       <br>
-       <hr style="border: 2px solid black;">
-
-      <section id="contact">
-        <h2 class="contact">Contact</h2>
-        <p>Ada pertanyaan atau saran? <br>
-          <br>
-          Kami ingin mendengar dari kamu! <br>
-          <br>
-           Jangan ragu untuk menghubungi kami! Halaman Contact ini memberikan kamu akses langsung untuk berkomunikasi dengan tim Website Gabut. <br>
-          Kami selalu terbuka untuk kritik dan masukan, serta siap membantu jika kamu membutuhkan sesuatu.<br>
-          Kirim pesan melalui formulir kontak atau email kami, dan kami akan merespons sesegera mungkin!</p>
-          <p>Jika kamu ingin berbagi ide, saran, atau hanya sekadar menyapa, kami sangat senang mendengarnya. Kami menghargai setiap masukan dari kamu untuk membuat Website Gabut menjadi lebih baik lagi. Terima kasih telah mengunjungi website kami, dan semoga kamu menikmati konten yang kami sajikan!</p>
-        <p>Untuk pertanyaan lebih lanjut, silakan kirim email ke: <a href="mailto:gamersinside0@gmail.com">email</a>
-      </section>  
-
-
-      <br>
-
-
-
-    <footer>
-      
-      <p>Follow us on social media:</p>
-      <ul>
-        <li><a href="https://x.com/Grzzx_a">Twitter</a></li>
-        <li><a href="https://www.instagram.com/ildaaaaaann_74/Instagram">Instagram</a></li>
-        <li><a href="https://github.com/Ildhaaannnnnnn">Github</a></li>
-      </ul>
-      <p>Catatan⚠️</p>
-      <p>Website ini di buat oleh 1 orang, tidak ada yang membantu
-        dan tidak ada yang menginspirasi, semua ini adalah hasil dari pemikiran saya sendiri. <br>
-        Jadi jangan harap ada yang menarik di website ini, karena ini adalah website gabut saya. <br>
-        Terima kasih telah mengunjungi website gabut saya, semoga kamu tidak terlalu gabut setelah mengunjungi website ini.
-      </p>
-      <p>Jika kamu menemukan kesalahan atau bug, silakan beri tahu kami melalui halaman Contact.</p>
-      <p>Created by Ildhaan</p>
-      <p>&copy; 2025 Website Gabut. All rights reserved.</p>
-    </footer>
-
-  </body>
   <script src="script.js"></script>
+</body>
 </html>
