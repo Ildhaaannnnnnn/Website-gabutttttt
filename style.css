@@ -71,3 +71,62 @@
       margin-top: auto;
       color: #888;
     }
+
+    
+#typing {
+  font-size: 1.2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline;
+  vertical-align: middle;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2rem;
+  background-color: #000000;
+  margin-left: 2px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.hero {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00ffff;
+}

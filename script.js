@@ -261,7 +261,51 @@ const ideas = [
   "The mind is like a parachute. It doesn’t work if it isn’t open. — Frank Zappa"
     ];
 
-  
+    const texts = [
+      "Hallo selamat datang di website saya!",
+      "Ide random yang seru 🎲",
+      "Tempat kamu cari hiburan 🕹️",
+      "Fakta unik tiap hari 📚",
+      "Qoutes yang bikin mikir 💡",
+      "Kira kira ngoding apa ya biar seru",
+      "Bagaimana sih cara jadi orang sukses?",
+      "Imagination is more important than knowledge. -Albert Einstein",
+      "Stay hungry, stay foolish. -Steve jobs",
+      "The quieter you become, the more you able to hear",
+    ];
+    
+   const typingElement = document.getElementById("typing");
+
+      let textIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+  function type() {
+     const currentText = texts[textIndex];
+     const displayedText = currentText.substring(0, charIndex);
+     typingElement.textContent = displayedText;
+
+     if (!isDeleting && charIndex < currentText.length) {
+       charIndex++;
+       setTimeout(type, 80); 
+    } else if (isDeleting && charIndex > 0) {
+       charIndex--;
+       setTimeout(type, 30); 
+     } else {
+        if (!isDeleting) {
+          isDeleting = true;
+          setTimeout(type, 3000); 
+      } else {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 500); 
+    }
+  }
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  type();
+});
 
     function generateIdea() {
       const idea = ideas[Math.floor(Math.random() * ideas.length)];
