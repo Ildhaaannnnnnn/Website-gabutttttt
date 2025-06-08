@@ -8,14 +8,15 @@ Meski ini cuma project kecil dan gabut, aku tetep pengen semuanya aman, nyaman, 
 ## 📢 Cara Melapor
 
 Kirim aja ke email pribadi:  
+
 **📧 [gamersinside0@gmail.com]
+
 
 Jelaskan secara singkat:
 - Apa yang kamu temuin
 - Gimana cara nge-reproduce-nya
 - (Kalau bisa) Solusi atau saran
 - Kasih bukti (Jika ada)
-- 
   
 ## ⏱️ Waktu Tanggap
 
