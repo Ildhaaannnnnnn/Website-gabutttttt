@@ -62,6 +62,16 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 
    See you next time!
 
+## fun fact
+   Website ini di buat oleh 1 orang,aslinya males banget,yaa karena gabut mending buat ini website aja deh hehhe
+
+## Promosi
+
+```bash 
+  https://github.com/Ildhaaannnnnnn/scriptup.git
+```
+Promosi hasil proyek gua, kalo kurg sempurna yaa gaappaa namannya juga belajar
+
 ## 😵 Penutup
 
 Makasih udah mampir ke project yang gak jelas ini.  
