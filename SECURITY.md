@@ -9,7 +9,7 @@ Meski ini cuma project kecil dan gabut, aku tetep pengen semuanya aman, nyaman, 
 
 Kirim aja ke email pribadi:  
 
-**📧 [gamersinside0@gmail.com]
+**📧 [Tidak tersedia]
 
 
 Jelaskan secara singkat:
