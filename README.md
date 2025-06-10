@@ -73,8 +73,7 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 
    Semoga kalian mengahargai karya simple ku ini.
   
-  hehe
-
+  Im back
    See you next time!
 
 ## fun fact
