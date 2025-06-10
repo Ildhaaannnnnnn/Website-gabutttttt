@@ -271,7 +271,9 @@ const ideas = [
       "Bagaimana sih cara jadi orang sukses?",
       "Imagination is more important than knowledge. -Albert Einstein",
       "Stay hungry, stay foolish. -Steve jobs",
-      "The quieter you become, the more you able to hear",
+      "the quieter you become, the more you are able to hear",
+      "Mengetik...",
+      "A man with no friend or a very small circle,is a very,very secure man -Jason Statham",
     ];
     
    const typingElement = document.getElementById("typing");

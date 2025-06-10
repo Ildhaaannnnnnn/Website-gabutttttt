@@ -1,0 +1,54 @@
+:root {
+          --accent-color: #00adb5;
+}
+
+body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: medium;
+          background-color: #1e1e1e;
+          color: white;
+          max-width: 100%;
+          margin: 0;
+          padding: 0;   
+}
+
+.hero {
+          color: white;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+}
+
+.hero h1, p{
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          margin: 0;
+          padding: 12px;    
+}
+.main h2 {
+   justify-content: center;
+   display: flex;
+   color: var(--accent-color);
+}
+
+
+.social-links {
+          display: flex;
+          justify-content: center;
+          gap: 1.5rem;
+          margin-top: 1rem;
+          flex-wrap: wrap;
+}
+
+.social-links a {
+          color: var(--accent-color);
+          text-decoration: none;
+          font-weight: bold;
+          transition: 0.3s ease;
+}
+
+.social-links a:hover {
+          color: #0039b5;
+}

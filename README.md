@@ -27,6 +27,20 @@ Cuma buat ngisi waktu luang, latihan, dan nyobain hal-hal random.
 
 ---
 
+## 🗂 Structure folder 
+
+``Structure
+  WEBSITE-GABUTTTTTT/
+  ├───index.html
+  ├───style.css
+  ├───script.js
+  ├───deskripsi.html
+  └───deskripsi.css
+``
+# Catatan 📌
+Deskripsi.js tidak ada karena deskripsi itu cuman berisi link social media, penjelasan singkat, terus pembuatan nya cuman mengandalkan, kecepatan,efiensi,singkat,padat dan hemat waktu. 
+
+
 ## 🎯 Tujuan
 
 Gak ada. Serius.

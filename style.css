@@ -31,7 +31,7 @@
     }
 
     main {
-      max-width: 900px;
+      max-width: 100%;
       padding: 2rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
