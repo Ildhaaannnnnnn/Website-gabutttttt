@@ -72,6 +72,8 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
    Aku akan mengupdate website ini jika tidak ada kesibukkan lain.
 
    Semoga kalian mengahargai karya simple ku ini.
+  
+  hehe
 
    See you next time!
 
