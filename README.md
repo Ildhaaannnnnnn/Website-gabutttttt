@@ -73,20 +73,34 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 
    Semoga kalian mengahargai karya simple ku ini.
   
-  Im back
-   See you next time!
+ 
 
 ## fun fact
    Website ini di buat oleh 1 orang,aslinya males banget,yaa karena gabut mending buat ini website aja deh hehhe
 
-## Promosi
+- Ada campuran chatgpt jir🗿
 
-```bash 
-  https://github.com/Ildhaaannnnnnn/scriptup.git
-```
-Promosi hasil proyek gua, kalo kurg sempurna yaa gaappaa namannya juga belajar
+- Fokus belajar Bahasa C 
+
+
+## Catatan ke 2📝
+
+ - Owner udh ga lanjutin projek ini lagi,karena owner fokus ke Bahasa C bukan html,css dan js lagi,jadi mohon maaf kalo webnya jelek.
+
 
 ## 😵 Penutup
 
-Makasih udah mampir ke project yang gak jelas ini.  
-Kalau kamu bener-bener baca sampe sini... berarti kamu juga gabut 😭
+Maaf ya kalo misalkan ada campur tangan Ai,belum terlalu ngerti aku hahaha,sekarang udh fokus ke Bahasa C,mau nyoba ke Malware Analyst,Bismilahirohmanirohim.
+
+- Tulisan yg di buat sama gua dan Ai beda,kalian bisa liat perbedaannya sendiri ya!
+
+
+```C
+ #include <stdio.h>
+  
+ int main() {
+
+ printf("Hello, World!");
+ return 0;
+}
+```
