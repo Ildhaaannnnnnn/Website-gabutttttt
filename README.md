@@ -56,7 +56,7 @@ Siapa tahu bisa jadi inspirasi project absurd kamu sendiri 😎
 ## 📺 Live Demo
 
 > github pages:  
-> https://ildhaaannnnnnn.github.io/Website-gabutttttt/
+> https://ildhansec.github.io/Website-gabutttttt/
 
 ---
 
